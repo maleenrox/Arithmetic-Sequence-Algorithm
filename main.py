@@ -9,6 +9,9 @@ d = "y"
 e = 0
 f = 0
 g = 0
+h = 0
+i = 0
+j = 0
 o = 0
 p = 0
 k = 0
@@ -66,68 +69,372 @@ Comparison Operators
 
 while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "breinputerro" or d == "clist":
     while k == 0:
-        a = int(input("Input Your First Number :- "))
+        a = str(input("Input Your First Number :- "))
+        if a == "pi":
+            a = float(math.pi)
+        elif a == "-pi":
+            a = float((-1) * math.pi)
+        elif a == "e":
+            a = float(math.e)
+        elif a == "-e":
+            a = float((-1) * math.e)
+        elif a == "inf":
+            a = float(math.inf)
+        elif a == "-inf":
+            a = float(-math.inf)
+        else:
+            a = float(a)
         o = str(input("Choose Your Operator :- "))
         p = o
         g = a
-        if o == "+":
+        if o == "+" or o == "1":
             print(a, "+", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a + b
             print(a, "+", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "-":
+        elif o == "-" or o == "2":
             print(a, "-", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a - b
             print(a, "-", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "*":
+        elif o == "*" or o == "3":
             print(a, "*", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a * b
             print(a, "*", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "/":
+        elif o == "/" or o == "4":
             print(a, "/", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a / b
             print(a, "/", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "%":
+        elif o == "%" or o == "5":
             print(a, "%", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a % b
             print(a, "%", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "**":
+        elif o == "**" or o == "6":
             print(a, "**", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a ** b
             print(a, "**", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "//":
+        elif o == "//" or o == "7":
             print(a, "//", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a // b
             print(a, "//", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "-**":
+        elif o == "-**" or o == "8":
             z = math.sqrt(a)
             print("sqrt(", a, ")", "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "+=":
+        elif o == "rad" or o == "9":
+            z = math.radians(a)
+            h += 0
+            print(a, u'\N{DEGREE SIGN}', "----->", z, "rad")
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "deg" or o == "10":
+            z = math.degrees(a)
+            print(a, "rad", "----->", z, u'\N{DEGREE SIGN}')
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "sin" or o == "11":
+            if h == 0:
+                z = math.sin(math.radians(a))
+            else:
+                z = math.sin(a)
+            h = 0
+            print(u'sin\N{DEGREE SIGN}' "(", a, ")", "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "cos" or o == "12":
+            if h == 0:
+                z = math.cos(math.radians(a))
+            else:
+                z = math.cos(a)
+            h = 0
+            print(u'cos\N{DEGREE SIGN}' "(", a, ")", "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "tan" or o == "13":
+            if h == 0:
+                z = math.tan(math.radians(a))
+            else:
+                z = math.tan(a)
+            h = 0
+            print(u'tan\N{DEGREE SIGN}' "(", a, ")", "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "cosec" or o == "14":
+            if h == 0:
+                j = math.sin(math.radians(a))
+            else:
+                j = math.sin(a)
+            h = 0
+            z = 1 / j
+            print(u'cosec\N{DEGREE SIGN}' "(", a, ")", "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "sec" or o == "15":
+            if h == 0:
+                j = math.cos(math.radians(a))
+            else:
+                j = math.cos(a)
+            h = 0
+            z = 1 / j
+            print(u'sec\N{DEGREE SIGN}' "(", a, ")", "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "cot" or o == "16":
+            if h == 0:
+                j = math.tan(math.radians(a))
+            else:
+                j = math.tan(a)
+            h = 0
+            z = 1 / j
+            print(u'cot\N{DEGREE SIGN}' "(", a, ")", "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "asin" or o == "17":
+            z = math.asin(a)
+            i = math.degrees(z)
+            print("asin", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+            z = i
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "acos" or o == "18":
+            z = math.acos(a)
+            i = math.degrees(z)
+            print("acos", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+            z = i
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "atan" or o == "19":
+            z = math.atan(a)
+            i = math.degrees(z)
+            print("atan", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+            z = i
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "acosec" or o == "20":
+            a = 1 / a
+            z = math.asin(a)
+            i = math.degrees(z)
+            print("acosec", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+            z = i
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "asec" or o == "21":
+            a = 1 / a
+            z = math.acos(a)
+            i = math.degrees(z)
+            print("asec", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+            z = i
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "acot" or o == "22":
+            a = 1 / a
+            z = math.atan(a)
+            i = math.degrees(z)
+            print("acot", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+            z = i
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "log" or o == "23":
+            print("log", "?", a)
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
+            z = math.log(a, b)
+            print("log", b, a, "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "log10" or o == "lg" or o == "24":
+            print("log", "10", a)
+            z = math.log10(a)
+            print("log", "10", a, "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "log2" or o == "25":
+            print("log", "2", a)
+            z = math.log2(a)
+            print("log", "2", a, "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "loge" or o == "ln" or o == "26":
+            print("log", "e", a)
+            z = math.log(a, math.e)
+            print("log", "e", a, "=", z)
+            print("___________________________")
+            print("Final Value :-", z)
+            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+        elif o == "+=" or o == "27":
             print(a, "+=", "?")
             e = a
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             s = int(input("Number of Loops required for Your Operator :- "))
             for f in range(s):
                 print("Loop no.", f, "---", "x =", a, "+", b)
@@ -136,12 +443,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
             f = 0
             z = a
             print("___________________________")
-            print("Final Value :-", a)
+            print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "-=":
+        elif o == "-=" or o == "28":
             print(a, "-=", "?")
             e = a
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             s = int(input("Number of Loops required for Your Operator :- "))
             for f in range(s):
                 print("Loop no.", f, "---", "x =", a, "-", b)
@@ -150,12 +471,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
             f = 0
             z = a
             print("___________________________")
-            print("Final Value :-", a)
+            print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "*=":
+        elif o == "*=" or o == "29":
             print(a, "*=", "?")
             e = a
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             s = int(input("Number of Loops required for Your Operator :- "))
             for f in range(s):
                 print("Loop no.", f, "---", "x =", a, "*", b)
@@ -164,12 +499,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
             f = 0
             z = a
             print("___________________________")
-            print("Final Value :-", a)
+            print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "/=":
+        elif o == "/=" or o == "30":
             print(a, "/=", "?")
             e = a
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             s = int(input("Number of Loops required for Your Operator :- "))
             for f in range(s):
                 print("Loop no.", f, "---", "x =", a, "/", b)
@@ -178,12 +527,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
             f = 0
             z = a
             print("___________________________")
-            print("Final Value :-", a)
+            print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "%=":
+        elif o == "%=" or o == "31":
             print(a, "%=", "?")
             e = a
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             s = int(input("Number of Loops required for Your Operator :- "))
             for f in range(s):
                 print("Loop no.", f, "---", "x =", a, "%", b)
@@ -192,12 +555,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
             f = 0
             z = a
             print("___________________________")
-            print("Final Value :-", a)
+            print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "**=":
+        elif o == "**=" or o == "32":
             print(a, "**=", "?")
             e = a
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             s = int(input("Number of Loops required for Your Operator :- "))
             for f in range(s):
                 print("Loop no.", f, "---", "x =", a, "**", b)
@@ -206,12 +583,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
             f = 0
             z = a
             print("___________________________")
-            print("Final Value :-", a)
+            print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "//=":
+        elif o == "//=" or o == "33":
             print(a, "//=", "?")
             e = a
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             s = int(input("Number of Loops required for Your Operator :- "))
             for f in range(s):
                 print("Loop no.", f, "---", "x =", a, "//", b)
@@ -220,360 +611,212 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
             f = 0
             z = a
             print("___________________________")
-            print("Final Value :-", a)
+            print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "&":
+        elif o == "&" or o == "34":
+            a = int(a)
             print(a, "&", "?")
             b = int(input("Input Your Next Number :- "))
             z = a & b
             print(a, "&", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "|":
+        elif o == "|" or o == "35":
+            a = int(a)
             print(a, "|", "?")
             b = int(input("Input Your Next Number :- "))
             z = a | b
             print(a, "|", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "^":
+        elif o == "^" or o == "36":
+            a = int(a)
             print(a, "^", "?")
             b = int(input("Input Your Next Number :- "))
             z = a ^ b
             print(a, "^", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "~":
+        elif o == "~" or o == "37":
+            a = int(a)
             z = ~a
             print("~", a, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "<<":
+        elif o == "<<" or o == "38":
+            a = int(a)
             print(a, "<<", "?")
             b = int(input("Input Your Next Number :- "))
             z = a << b
             print(a, "<<", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == ">>":
+        elif o == ">>" or o == "39":
+            a = int(a)
             print(a, ">>", "?")
             b = int(input("Input Your Next Number :- "))
             z = a >> b
             print(a, ">>", b, "=", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "and":
+        elif o == "and" or o == "40":
             print(a, "AND", "?")
             b = int(input("Input Your Next Number :- "))
             z = a and b
             print(a, "AND", b, "=", z)
+            print("___________________________")
             print("Final Output :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "or":
+        elif o == "or" or o == "41":
             print(a, "OR", "?")
             b = int(input("Input Your Next Number :- "))
             z = a or b
             print(a, "OR", b, "=", z)
+            print("___________________________")
             print("Final Output :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "not":
+        elif o == "not" or o == "42":
             z = not a
             print("NOT", a, "=", z)
+            print("___________________________")
             print("Final Output :-", z)
             d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "==":
+        elif o == "==" or o == "43":
             print(a, "==", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a == b
             print(a, "==", b, "---", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "!=":
+        elif o == "!=" or o == "44":
             print(a, "!=", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a != b
             print(a, "!=", b, "---", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == ">":
+        elif o == ">" or o == "45":
             print(a, ">", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a > b
             print(a, ">", b, "---", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "<":
+        elif o == "<" or o == "46":
             print(a, "<", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a < b
             print(a, "<", b, "---", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == ">=":
+        elif o == ">=" or o == "47":
             print(a, ">=", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a >= b
             print(a, ">=", b, "---", z)
+            print("___________________________")
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "<=":
+        elif o == "<=" or o == "48":
             print(a, "<=", "?")
-            b = int(input("Input Your Next Number :- "))
+            b = str(input("Input Your First Number :- "))
+            if b == "pi":
+                b = float(math.pi)
+            elif b == "-pi":
+                b = float((-1) * math.pi)
+            elif b == "e":
+                b = float(math.e)
+            elif b == "-e":
+                b = float((-1) * math.e)
+            elif b == "inf":
+                b = float(math.inf)
+            elif b == "-inf":
+                b = float(-math.inf)
+            else:
+                b = float(b)
             z = a <= b
             print(a, "<=", b, "---", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "1":
-            print(a, "+", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a + b
-            print(a, "+", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "2":
-            print(a, "-", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a - b
-            print(a, "-", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "3":
-            print(a, "*", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a * b
-            print(a, "*", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "4":
-            print(a, "/", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a / b
-            print(a, "/", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "5":
-            print(a, "%", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a % b
-            print(a, "%", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "6":
-            print(a, "**", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a ** b
-            print(a, "**", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "7":
-            print(a, "//", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a // b
-            print(a, "//", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "8":
-            z = math.sqrt(a)
-            print("sqrt(", a, ")", "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "9":
-            print(a, "+=", "?")
-            e = a
-            b = int(input("Input Your Next Number :- "))
-            s = int(input("Number of Loops required for Your Operator :- "))
-            for f in range(s):
-                print("Loop no.", f, "---", "x =", a, "+", b)
-                a += b
-                print("x =", a, "||", "y =", b)
-            f = 0
-            z = a
             print("___________________________")
-            print("Final Value :-", a)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "10":
-            print(a, "-=", "?")
-            e = a
-            b = int(input("Input Your Next Number :- "))
-            s = int(input("Number of Loops required for Your Operator :- "))
-            for f in range(s):
-                print("Loop no.", f, "---", "x =", a, "-", b)
-                a -= b
-                print("x =", a, "||", "y =", b)
-            f = 0
-            z = a
-            print("___________________________")
-            print("Final Value :-", a)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "11":
-            print(a, "*=", "?")
-            e = a
-            b = int(input("Input Your Next Number :- "))
-            s = int(input("Number of Loops required for Your Operator :- "))
-            for f in range(s):
-                print("Loop no.", f, "---", "x =", a, "*", b)
-                a *= b
-                print("x =", a, "||", "y =", b)
-            f = 0
-            z = a
-            print("___________________________")
-            print("Final Value :-", a)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "12":
-            print(a, "/=", "?")
-            e = a
-            b = int(input("Input Your Next Number :- "))
-            s = int(input("Number of Loops required for Your Operator :- "))
-            for f in range(s):
-                print("Loop no.", f, "---", "x =", a, "/", b)
-                a /= b
-                print("x =", a, "||", "y =", b)
-            f = 0
-            z = a
-            print("___________________________")
-            print("Final Value :-", a)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "13":
-            print(a, "%=", "?")
-            e = a
-            b = int(input("Input Your Next Number :- "))
-            s = int(input("Number of Loops required for Your Operator :- "))
-            for f in range(s):
-                print("Loop no.", f, "---", "x =", a, "%", b)
-                a %= b
-                print("x =", a, "||", "y =", b)
-            f = 0
-            z = a
-            print("___________________________")
-            print("Final Value :-", a)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "14":
-            print(a, "**=", "?")
-            e = a
-            b = int(input("Input Your Next Number :- "))
-            s = int(input("Number of Loops required for Your Operator :- "))
-            for f in range(s):
-                print("Loop no.", f, "---", "x =", a, "**", b)
-                a **= b
-                print("x =", a, "||", "y =", b)
-            f = 0
-            z = a
-            print("___________________________")
-            print("Final Value :-", a)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "15":
-            print(a, "//=", "?")
-            e = a
-            b = int(input("Input Your Next Number :- "))
-            s = int(input("Number of Loops required for Your Operator :- "))
-            for f in range(s):
-                print("Loop no.", f, "---", "x =", a, "//", b)
-                a //= b
-                print("x =", a, "||", "y =", b)
-            f = 0
-            z = a
-            print("___________________________")
-            print("Final Value :-", a)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "16":
-            print(a, "&", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a & b
-            print(a, "&", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "17":
-            print(a, "|", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a | b
-            print(a, "|", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "18":
-            print(a, "^", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a ^ b
-            print(a, "^", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "19":
-            z = ~a
-            print("~", a, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "20":
-            print(a, "<<", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a << b
-            print(a, "<<", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "21":
-            print(a, ">>", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a >> b
-            print(a, ">>", b, "=", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "22":
-            print(a, "AND", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a and b
-            print(a, "AND", b, "=", z)
-            print("Final Output :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "23":
-            print(a, "OR", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a or b
-            print(a, "OR", b, "=", z)
-            print("Final Output :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "24":
-            z = not a
-            print("NOT", a, "=", z)
-            print("Final Output :-", z)
-            d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-        elif o == "25":
-            print(a, "==", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a == b
-            print(a, "==", b, "---", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "26":
-            print(a, "!=", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a != b
-            print(a, "!=", b, "---", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "27":
-            print(a, ">", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a > b
-            print(a, ">", b, "---", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "28":
-            print(a, "<", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a < b
-            print(a, "<", b, "---", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "29":
-            print(a, ">=", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a >= b
-            print(a, ">=", b, "---", z)
-            print("Final Value :-", z)
-            d = str(input("Do You want Another Operator (y/n/new) :- "))
-        elif o == "30":
-            print(a, "<=", "?")
-            b = int(input("Input Your Next Number :- "))
-            z = a <= b
-            print(a, "<=", b, "---", z)
             print("Final Value :-", z)
             d = str(input("Do You want Another Operator (y/n/new) :- "))
         elif o == "areinput":
@@ -591,7 +834,21 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
     if d == "new":
         print("$ New Calculation...")
         print("___________________________")
-        a = int(input("Input Your First Number :- "))
+        a = str(input("Input Your First Number :- "))
+        if a == "pi":
+            a = float(math.pi)
+        elif a == "-pi":
+            a = float((-1) * math.pi)
+        elif a == "e":
+            a = float(math.e)
+        elif a == "-e":
+            a = float((-1) * math.e)
+        elif a == "inf":
+            a = float(math.inf)
+        elif a == "-inf":
+            a = float(-math.inf)
+        else:
+            a = float(a)
         o = str(input("Choose Your Operator :- "))
         g = a
         p = o
@@ -603,7 +860,21 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         g = z
     elif d == "areinput":
         print("$ Refresh Your First Number in Calculation...")
-        a = int(input("Input Your First Number :- "))
+        a = str(input("Input Your First Number :- "))
+        if a == "pi":
+            a = float(math.pi)
+        elif a == "-pi":
+            a = float((-1) * math.pi)
+        elif a == "e":
+            a = float(math.e)
+        elif a == "-e":
+            a = float((-1) * math.e)
+        elif a == "inf":
+            a = float(math.inf)
+        elif a == "-inf":
+            a = float(-math.inf)
+        else:
+            a = float(a)
         g = a
         o = str(input("Choose Your Operator :- "))
         p = o
@@ -622,64 +893,354 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         continue
     elif d == "n":
         break
-    if o == "+":
+    if o == "+" or o == "1":
         print(a, "+", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a + b
         print(a, "+", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "-":
+    elif o == "-" or o == "2":
         print(a, "-", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a - b
         print(a, "-", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "*":
+    elif o == "*" or o == "3":
         print(a, "*", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a * b
         print(a, "*", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "/":
+    elif o == "/" or o == "4":
         print(a, "/", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a / b
         print(a, "/", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "%":
+    elif o == "%" or o == "5":
         print(a, "%", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a % b
         print(a, "%", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "**":
+    elif o == "**" or o == "6":
         print(a, "**", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a ** b
         print(a, "**", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "//":
+    elif o == "//" or o == "7":
         print(a, "//", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a // b
         print(a, "//", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "-**":
+    elif o == "-**" or o == "8":
         z = math.sqrt(a)
         print("sqrt(", a, ")", "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "+=":
+    elif o == "rad" or o == "9":
+        z = math.radians(a)
+        h += 0
+        print(a, u'\N{DEGREE SIGN}', "----->", z, "rad")
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "deg" or o == "10":
+        z = math.degrees(a)
+        print(a, "rad", "----->", z, u'\N{DEGREE SIGN}')
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "sin" or o == "11":
+        if h == 0:
+            z = math.sin(math.radians(a))
+        else:
+            z = math.sin(a)
+        h = 0
+        print(u'sin\N{DEGREE SIGN}' "(", a, ")", "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "cos" or o == "12":
+        if h == 0:
+            z = math.cos(math.radians(a))
+        else:
+            z = math.cos(a)
+        h = 0
+        print(u'cos\N{DEGREE SIGN}' "(", a, ")", "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "tan" or o == "13":
+        if h == 0:
+            z = math.tan(math.radians(a))
+        else:
+            z = math.tan(a)
+        h = 0
+        print(u'tan\N{DEGREE SIGN}' "(", a, ")", "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "cosec" or o == "14":
+        if h == 0:
+            j = math.sin(math.radians(a))
+        else:
+            j = math.sin(a)
+        h = 0
+        z = 1 / j
+        print(u'cosec\N{DEGREE SIGN}' "(", a, ")", "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "sec" or o == "15":
+        if h == 0:
+            j = math.cos(math.radians(a))
+        else:
+            j = math.cos(a)
+        h = 0
+        z = 1 / j
+        print(u'sec\N{DEGREE SIGN}' "(", a, ")", "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "cot" or o == "16":
+        if h == 0:
+            j = math.tan(math.radians(a))
+        else:
+            j = math.tan(a)
+        h = 0
+        z = 1 / j
+        print(u'cot\N{DEGREE SIGN}' "(", a, ")", "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "asin" or o == "17":
+        z = math.asin(a)
+        i = math.degrees(z)
+        print("asin", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+        z = i
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "acos" or o == "18":
+        z = math.acos(a)
+        i = math.degrees(z)
+        print("acos", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+        z = i
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "atan" or o == "19":
+        z = math.atan(a)
+        i = math.degrees(z)
+        print("atan", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+        z = i
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "acosec" or o == "20":
+        a = 1 / a
+        z = math.asin(a)
+        i = math.degrees(z)
+        print("acosec", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+        z = i
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "asec" or o == "21":
+        a = 1 / a
+        z = math.acos(a)
+        i = math.degrees(z)
+        print("asec", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+        z = i
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "acot" or o == "22":
+        a = 1 / a
+        z = math.atan(a)
+        i = math.degrees(z)
+        print("acot", "(", a, ")", "----->", z, "rad", "|", i, u'\N{DEGREE SIGN}')
+        z = i
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "log" or o == "23":
+        print("log", "?", a)
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
+        z = math.log(a, b)
+        print("log", b, a, "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "log10" or o == "lg" or o == "24":
+        print("log", "10", a)
+        z = math.log10(a)
+        print("log", "10", a, "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "log2" or o == "25":
+        print("log", "2", a)
+        z = math.log2(a)
+        print("log", "2", a, "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "loge" or o == "ln" or o == "26":
+        print("log", "e", a)
+        z = math.log(a, math.e)
+        print("log", "e", a, "=", z)
+        print("___________________________")
+        print("Final Value :-", z)
+        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
+    elif o == "+=" or o == "27":
         print(a, "+=", "?")
         e = a
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         s = int(input("Number of Loops required for Your Operator :- "))
         for f in range(s):
             print("Loop no.", f, "---", "x =", a, "+", b)
@@ -688,12 +1249,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         f = 0
         z = a
         print("___________________________")
-        print("Final Value :-", a)
+        print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "-=":
+    elif o == "-=" or o == "28":
         print(a, "-=", "?")
         e = a
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         s = int(input("Number of Loops required for Your Operator :- "))
         for f in range(s):
             print("Loop no.", f, "---", "x =", a, "-", b)
@@ -702,12 +1277,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         f = 0
         z = a
         print("___________________________")
-        print("Final Value :-", a)
+        print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "*=":
+    elif o == "*=" or o == "29":
         print(a, "*=", "?")
         e = a
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         s = int(input("Number of Loops required for Your Operator :- "))
         for f in range(s):
             print("Loop no.", f, "---", "x =", a, "*", b)
@@ -716,12 +1305,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         f = 0
         z = a
         print("___________________________")
-        print("Final Value :-", a)
+        print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "/=":
+    elif o == "/=" or o == "30":
         print(a, "/=", "?")
         e = a
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         s = int(input("Number of Loops required for Your Operator :- "))
         for f in range(s):
             print("Loop no.", f, "---", "x =", a, "/", b)
@@ -730,12 +1333,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         f = 0
         z = a
         print("___________________________")
-        print("Final Value :-", a)
+        print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "%=":
+    elif o == "%=" or o == "31":
         print(a, "%=", "?")
         e = a
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         s = int(input("Number of Loops required for Your Operator :- "))
         for f in range(s):
             print("Loop no.", f, "---", "x =", a, "%", b)
@@ -744,12 +1361,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         f = 0
         z = a
         print("___________________________")
-        print("Final Value :-", a)
+        print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "**=":
+    elif o == "**=" or o == "32":
         print(a, "**=", "?")
         e = a
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         s = int(input("Number of Loops required for Your Operator :- "))
         for f in range(s):
             print("Loop no.", f, "---", "x =", a, "**", b)
@@ -758,12 +1389,26 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         f = 0
         z = a
         print("___________________________")
-        print("Final Value :-", a)
+        print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "//=":
+    elif o == "//=" or o == "33":
         print(a, "//=", "?")
         e = a
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         s = int(input("Number of Loops required for Your Operator :- "))
         for f in range(s):
             print("Loop no.", f, "---", "x =", a, "//", b)
@@ -772,360 +1417,212 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         f = 0
         z = a
         print("___________________________")
-        print("Final Value :-", a)
+        print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "&":
+    elif o == "&" or o == "34":
+        a = int(a)
         print(a, "&", "?")
         b = int(input("Input Your Next Number :- "))
         z = a & b
         print(a, "&", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "|":
+    elif o == "|" or o == "35":
+        a = int(a)
         print(a, "|", "?")
         b = int(input("Input Your Next Number :- "))
         z = a | b
         print(a, "|", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "^":
+    elif o == "^" or o == "36":
+        a = int(a)
         print(a, "^", "?")
         b = int(input("Input Your Next Number :- "))
         z = a ^ b
         print(a, "^", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "~":
+    elif o == "~" or o == "37":
+        a = int(a)
         z = ~a
         print("~", a, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "<<":
+    elif o == "<<" or o == "38":
+        a = int(a)
         print(a, "<<", "?")
         b = int(input("Input Your Next Number :- "))
         z = a << b
         print(a, "<<", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == ">>":
+    elif o == ">>" or o == "39":
+        a = int(a)
         print(a, ">>", "?")
         b = int(input("Input Your Next Number :- "))
         z = a >> b
         print(a, ">>", b, "=", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "and":
+    elif o == "and" or o == "40":
         print(a, "AND", "?")
         b = int(input("Input Your Next Number :- "))
         z = a and b
         print(a, "AND", b, "=", z)
+        print("___________________________")
         print("Final Output :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "or":
+    elif o == "or" or o == "41":
         print(a, "OR", "?")
         b = int(input("Input Your Next Number :- "))
         z = a or b
         print(a, "OR", b, "=", z)
+        print("___________________________")
         print("Final Output :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "not":
+    elif o == "not" or o == "42":
         z = not a
         print("NOT", a, "=", z)
+        print("___________________________")
         print("Final Output :-", z)
         d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "==":
+    elif o == "==" or o == "43":
         print(a, "==", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a == b
         print(a, "==", b, "---", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "!=":
+    elif o == "!=" or o == "44":
         print(a, "!=", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a != b
         print(a, "!=", b, "---", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == ">":
+    elif o == ">" or o == "45":
         print(a, ">", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a > b
         print(a, ">", b, "---", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "<":
+    elif o == "<" or o == "46":
         print(a, "<", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a < b
         print(a, "<", b, "---", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == ">=":
+    elif o == ">=" or o == "47":
         print(a, ">=", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a >= b
         print(a, ">=", b, "---", z)
+        print("___________________________")
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "<=":
+    elif o == "<=" or o == "48":
         print(a, "<=", "?")
-        b = int(input("Input Your Next Number :- "))
+        b = str(input("Input Your First Number :- "))
+        if b == "pi":
+            b = float(math.pi)
+        elif b == "-pi":
+            b = float((-1) * math.pi)
+        elif b == "e":
+            b = float(math.e)
+        elif b == "-e":
+            b = float((-1) * math.e)
+        elif b == "inf":
+            b = float(math.inf)
+        elif b == "-inf":
+            b = float(-math.inf)
+        else:
+            b = float(b)
         z = a <= b
         print(a, "<=", b, "---", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "1":
-        print(a, "+", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a + b
-        print(a, "+", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "2":
-        print(a, "-", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a - b
-        print(a, "-", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "3":
-        print(a, "*", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a * b
-        print(a, "*", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "4":
-        print(a, "/", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a / b
-        print(a, "/", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "5":
-        print(a, "%", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a % b
-        print(a, "%", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "6":
-        print(a, "**", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a ** b
-        print(a, "**", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "7":
-        print(a, "//", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a // b
-        print(a, "//", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "8":
-        z = math.sqrt(a)
-        print("sqrt(", a, ")", "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "9":
-        print(a, "+=", "?")
-        e = a
-        b = int(input("Input Your Next Number :- "))
-        s = int(input("Number of Loops required for Your Operator :- "))
-        for f in range(s):
-            print("Loop no.", f, "---", "x =", a, "+", b)
-            a += b
-            print("x =", a, "||", "y =", b)
-        f = 0
-        z = a
         print("___________________________")
-        print("Final Value :-", a)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "10":
-        print(a, "-=", "?")
-        e = a
-        b = int(input("Input Your Next Number :- "))
-        s = int(input("Number of Loops required for Your Operator :- "))
-        for f in range(s):
-            print("Loop no.", f, "---", "x =", a, "-", b)
-            a -= b
-            print("x =", a, "||", "y =", b)
-        f = 0
-        z = a
-        print("___________________________")
-        print("Final Value :-", a)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "11":
-        print(a, "*=", "?")
-        e = a
-        b = int(input("Input Your Next Number :- "))
-        s = int(input("Number of Loops required for Your Operator :- "))
-        for f in range(s):
-            print("Loop no.", f, "---", "x =", a, "*", b)
-            a *= b
-            print("x =", a, "||", "y =", b)
-        f = 0
-        z = a
-        print("___________________________")
-        print("Final Value :-", a)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "12":
-        print(a, "/=", "?")
-        e = a
-        b = int(input("Input Your Next Number :- "))
-        s = int(input("Number of Loops required for Your Operator :- "))
-        for f in range(s):
-            print("Loop no.", f, "---", "x =", a, "/", b)
-            a /= b
-            print("x =", a, "||", "y =", b)
-        f = 0
-        z = a
-        print("___________________________")
-        print("Final Value :-", a)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "13":
-        print(a, "%=", "?")
-        e = a
-        b = int(input("Input Your Next Number :- "))
-        s = int(input("Number of Loops required for Your Operator :- "))
-        for f in range(s):
-            print("Loop no.", f, "---", "x =", a, "%", b)
-            a %= b
-            print("x =", a, "||", "y =", b)
-        f = 0
-        z = a
-        print("___________________________")
-        print("Final Value :-", a)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "14":
-        print(a, "**=", "?")
-        e = a
-        b = int(input("Input Your Next Number :- "))
-        s = int(input("Number of Loops required for Your Operator :- "))
-        for f in range(s):
-            print("Loop no.", f, "---", "x =", a, "**", b)
-            a **= b
-            print("x =", a, "||", "y =", b)
-        f = 0
-        z = a
-        print("___________________________")
-        print("Final Value :-", a)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "15":
-        print(a, "//=", "?")
-        e = a
-        b = int(input("Input Your Next Number :- "))
-        s = int(input("Number of Loops required for Your Operator :- "))
-        for f in range(s):
-            print("Loop no.", f, "---", "x =", a, "//", b)
-            a //= b
-            print("x =", a, "||", "y =", b)
-        f = 0
-        z = a
-        print("___________________________")
-        print("Final Value :-", a)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "16":
-        print(a, "&", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a & b
-        print(a, "&", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "17":
-        print(a, "|", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a | b
-        print(a, "|", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "18":
-        print(a, "^", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a ^ b
-        print(a, "^", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "19":
-        z = ~a
-        print("~", a, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "20":
-        print(a, "<<", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a << b
-        print(a, "<<", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "21":
-        print(a, ">>", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a >> b
-        print(a, ">>", b, "=", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "22":
-        print(a, "AND", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a and b
-        print(a, "AND", b, "=", z)
-        print("Final Output :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "23":
-        print(a, "OR", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a or b
-        print(a, "OR", b, "=", z)
-        print("Final Output :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "24":
-        z = not a
-        print("NOT", a, "=", z)
-        print("Final Output :-", z)
-        d = str(input("Do You want Another Operator to Final Value (y/n/new) :- "))
-    elif o == "25":
-        print(a, "==", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a == b
-        print(a, "==", b, "---", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "26":
-        print(a, "!=", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a != b
-        print(a, "!=", b, "---", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "27":
-        print(a, ">", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a > b
-        print(a, ">", b, "---", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "28":
-        print(a, "<", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a < b
-        print(a, "<", b, "---", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "29":
-        print(a, ">=", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a >= b
-        print(a, ">=", b, "---", z)
-        print("Final Value :-", z)
-        d = str(input("Do You want Another Operator (y/n/new) :- "))
-    elif o == "30":
-        print(a, "<=", "?")
-        b = int(input("Input Your Next Number :- "))
-        z = a <= b
-        print(a, "<=", b, "---", z)
         print("Final Value :-", z)
         d = str(input("Do You want Another Operator (y/n/new) :- "))
     elif o == "areinput":
@@ -1137,7 +1634,6 @@ while d == "y" or d == "new" or d == "areinput" or d == "breinput" or d == "brei
         print("___________________________")
         o = str(input("Choose Your Operator :- "))
         d = "new"
-
 print("Final Value :-", z)
 print("Thank You")
 input("Press Enter to Continue...")
