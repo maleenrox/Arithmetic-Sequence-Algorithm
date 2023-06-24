@@ -7,21 +7,21 @@ import math
 
 # Variables
 
-a = 0       # First Number in Calculation
-b = 0       # Second Number in Calculation
-d = "y"     # Main Command Storage
-e = 0       # External First Number Storage
-f = 0       # Assignment Loop Counter
-g = 0       # External First Number Storage
-h = 0       # Pi Input Detector
-i = 0       # Degree Value Store in Inverse Operator
-j = 0       # Inverse Value Generator
-o = 0       # Main Operator Storage
-p = 0       # External Operator Storage
-q = 0       # Division Zero Error Detector
-k = 0       # First Loop Ender
-s = 0       # Loop Count Memorise Storage in Assignment Operators
-z = 0       # Main Final Value Store
+a = 0  # First Number in Calculation
+b = 0  # Second Number in Calculation
+d = "y"  # Main Command Storage
+e = 0  # External First Number Storage
+f = 0  # Assignment Loop Counter
+g = 0  # External First Number Storage
+h = 0  # Pi Input Detector
+i = 0  # Degree Value Store in Inverse Operator
+j = 0  # Inverse Value Generator
+o = 0  # Main Operator Storage
+p = 0  # External Operator Storage
+q = 0  # Division Zero Error Detector
+k = 0  # First Loop Ender
+s = 0  # Loop Count Memorise Storage in Assignment Operators
+z = 0  # Main Final Value Store
 
 # Welcome Message & Command , Operator List
 print('''.............................................
@@ -1049,6 +1049,7 @@ $ Logarithmic Operators					            > 47: Greater than or Equal to (>=)
         d = str(input("Do You want Another Operator (y/n/new/brin/clist) :- "))
         continue
 
+# Next Loop
     # Arithmetic Operators
     if o == "+" or o == "1":
         print(a, "+", "?")
@@ -1856,3 +1857,14 @@ print("Final Value of Your Calculation :-", z)
 print("--------------------------------------------------------------------------")
 print("Arithmetic Sequence Algorithm from @maleenrox")
 input("Press Enter to Continue...")
+
+# $$$ Note from Author...
+'''
+*****************************************************************************************
+-----------------------------------------------------------------------------------------
+$$ This is My Second Python Project...
+$$ Author - @maleenrox
+*$$ Spacial Thanks & Credits - @sanjulap, @OminduD, S, ChatGPT, w3school, Google AI, ...
+-----------------------------------------------------------------------------------------
+*****************************************************************************************
+'''

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="852ad765-e1d0-4a13-a5ae-96b273d9b682" name="Changes" comment="add operators (up to 48)">
+    <list default="true" id="852ad765-e1d0-4a13-a5ae-96b273d9b682" name="Changes" comment="Add Comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -76,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687536041914</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Comments">
+      <created>1687632296228</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687632296228</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base commit" />
     <MESSAGE value="add operators (up to 48)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add operators (up to 48)" />
+    <MESSAGE value="Add Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Comments" />
   </component>
 </project>
